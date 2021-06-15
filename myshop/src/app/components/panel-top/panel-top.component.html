@@ -1,0 +1,10 @@
+<div>
+    <div style="display: flex;flex-direction: row;">
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/17/4e/e3/174ee302-12a0-d55e-90fc-40697f8da656/source/256x256bb.jpg" alt="">
+        <h2>Hokus Pokus, Czary Mary</h2>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
+        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+    </div>
+</div>
